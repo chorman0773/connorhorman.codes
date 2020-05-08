@@ -19,10 +19,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContext">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="about.html" target="main">Home</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/about.html">About</a>
+                    <a class="nav-link" href="Resume.pdf">Resume</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="https://github.com/chorman0773" target="_blank">My Github Page</a>
@@ -35,7 +35,9 @@
                         Projects
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="projects/pkmcom.html">PkmCom</a>
+                        <a class="dropdown-item" href="projects/pkmcom.html" target="main">PkmCom</a>
+                        <a class="dropdown-item" href="projects/lcnix.html" target="main">LCNix</a>
+                        <a class="dropdown-item" href="projects/laser.html" target="main">Laser</a>
                     </div>
                 </li>
             </ul>
@@ -43,11 +45,14 @@
     </nav>
     <hr/>
     <div class="bg-dark text-white">
-        <p class="font-size: 24pt;">Hello, my name is Connor</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras urna nisl, ultricies et nulla nec, luctus lacinia velit. Quisque feugiat urna vitae leo gravida, in dignissim velit porttitor. Duis urna metus, tristique quis odio nec, sodales condimentum libero. Nam vulputate porta dolor, in pharetra eros ornare vel. Sed et libero tortor. Sed tincidunt massa vel lacus mollis, at iaculis tortor finibus. Sed hendrerit ornare nisl eget fringilla.</p>
-        <p>Sed ut cursus odio. Duis euismod turpis semper urna iaculis, id lobortis augue lobortis. Donec vel lectus ipsum. Suspendisse facilisis orci nisi, nec viverra tellus viverra vel. Nullam condimentum faucibus consectetur. Integer enim purus, feugiat vel dui in, congue placerat ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut ipsum eros, lacinia sit amet vulputate quis, pulvinar in ante. Aenean vel purus fermentum, dignissim libero hendrerit, condimentum ligula. Integer mi lorem, ultricies id enim sit amet, dapibus congue ex. Sed diam justo, dictum ut purus vitae, luctus feugiat diam. Nunc et elit nisi. Nullam ut mauris ligula. Mauris pulvinar dignissim urna a lacinia. Aenean sed ante quis nisi eleifend ultrices.</p>
-        <p>Fusce accumsan elit ut sapien sagittis, id semper mauris varius. Duis ornare tempus felis, id feugiat augue. Donec pellentesque mauris ante, sed convallis sem fringilla at. Mauris vestibulum nisi sed mauris malesuada volutpat. Nulla odio ligula, porttitor eget vulputate vel, condimentum et lectus. Maecenas quis lectus nec libero commodo dignissim auctor non neque. Donec nec diam non arcu dapibus lobortis. Nulla rhoncus, libero nec convallis scelerisque, elit lorem sodales orci, nec fringilla leo purus hendrerit nulla. Curabitur luctus nisl dui, sit amet vulputate ipsum aliquam sit amet.</p>
+        <iframe name="main" src="about.html" id="root_iframe"></iframe>
     </div>
+    <script>
+        (function(){
+            document.getElementById("root_iframe").height = document.body.clientHeight+100;
+            document.getElementById("root_iframe").width = document.body.clientWidth;
+        })()
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
